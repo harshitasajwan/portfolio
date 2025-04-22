@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #d8b4fe;
+    color: #333;
+    padding: 20px;
+}
+
+nav {
+    background: #c084fc;
+    margin: 20px 0;
+    padding: 10px 0;
+    border-radius: 8px;
+    text-align: center;
+}
+nav .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+nav ul {
+    list-style: none;
+}
+nav ul li {
+    display: inline;
+    margin: 0 65px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.5s ease;
+}
+nav ul li a:hover {
+    color: #4b0082;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 30px;
+    background-color: #fff;
+    background-image: url('img.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    color: #1e1e1e;
+    gap: 20px;
+    flex-direction: row; /* Ensures the text stays on the left and image on the right */
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.text-content {
+    max-width: 600px;
+}
+
+.text-content h1 {
+    font-size: 2.8rem;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.text-content h1 span {
+    color: #c084fc;
+}
+
+.text-content p {
+    margin: 20px 0;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.hero-buttons a {
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.hero-buttons .btn.black {
+    background: #1e1e1e;
+    color: #fff;
+}
+
+.hero-buttons .btn.black:hover {
+    background: #333;
+}
+
+.hero-buttons .btn.orange {
+    background: #9333ea;
+    color: #fff;
+}
+
+.hero-buttons .btn.orange:hover {
+    background: #7e22ce;
+}
+
+.profile-pic {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid #e3b4f0;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+#about {
+    width: 100%;
+    background: #faf5ff;
+    border-left: 5px solid #9333ea;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 20px;
+    overflow: hidden; 
+  }
+  
+  #about h2 {
+    color: #7e22ce;
+    margin-bottom: 10px;
+  }
+  
+  #about pre {
+    font-size: 1rem;
+    line-height: 1.8;
+    white-space: pre-wrap;     
+
+  }
+  
+  
+  #contact {
+    background: #f3e8ff;
+    border-left: 5px solid #9333ea;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  #contact h2 {
+    color: #7e22ce;
+    margin-bottom: 15px;
+  }
+  
+  #contact p {
+    font-size: 1rem;
+    margin: 8px 0;
+  }
+  
+
+  #contact a {
+    color: #4b0082;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  #contact a:hover {
+    color: #9333ea;
+    text-decoration: underline;
+  }
+  #skills h2{
+    color:#7e22ce
+  }
+  #skills h3{
+    color:#7e22ce
+  }
+  #skills {
+    width: 100%;
+    background: #faf5ff;
+    border-left: 5px solid #9333ea;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 20px;
+    overflow: hidden; 
+    white-space: pre-wrap;   
+  }
+  #skills pre {
+    font-size: 1rem;
+    white-space: pre-wrap;     
+    overflow: hidden; 
+  }
+  
+  #hobbies h2{
+    color:#7e22ce;
+  }
+  #hobbies pre {
+    font-size: 1rem;
+    margin: 8px 0;
+    overflow: hidden;
+    white-space: pre-wrap;
+  }
+  
+  #hobbies h3{
+    color:#7e22ce;
+  }
+
+  #hobbies {
+    width: 100%;
+    background: #faf5ff;
+    border-left: 5px solid #9333ea;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 20px;
+    overflow: hidden; 
+  }
+  #projects h2{
+    color:#7e22ce;
+  }
+  #projects pre{
+  font-size: 1rem;
+  margin: 8px 0;
+  overflow: hidden;
+  white-space: pre-wrap;
+  }
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #d8b4fe;
+    color: #4b0082;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 15px;
+    }
+
+    .profile-pic {
+        width: 200px;
+        height: 200px;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
